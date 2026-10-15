@@ -1,2 +1,6 @@
+
 [server]
+
+# Prevent the file-watcher issue encountered with
+# some Transformers / PyTorch installations.
 fileWatcherType = "none"
