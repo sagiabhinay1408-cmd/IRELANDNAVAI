@@ -1,0 +1,18 @@
+
+[
+  {
+    "question": "How do I renew my Irish Residence Permit?",
+    "topic": "immigration",
+    "relevant_document_ids": [
+      "60dec03a-8666-55d4-bb10-c6250a2f5573"
+    ]
+  },
+  {
+    "question": "What is a TFI Leap Card?",
+    "topic": "transport",
+    "relevant_document_ids": [
+      "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+      "a5b6e909-45be-5d74-b988-231c39c56a2a"
+    ]
+  }
+]

@@ -6,8 +6,12 @@ Responsibilities:
 1. Initialize the embedding model.
 2. Connect to Qdrant Cloud.
 3. Create a vector collection when necessary.
-4. Upload official document chunks.
-5. Search documents by semantic similarity.
+4. Create payload indexes.
+5. Upload official document chunks.
+6. Search documents by semantic similarity.
+7. Return actual Qdrant point IDs for evaluation.
+
+Existing documents are not deleted.
 """
 
 import sys
@@ -15,15 +19,17 @@ import uuid
 from pathlib import Path
 
 from sentence_transformers import SentenceTransformer
-
 from qdrant_client import QdrantClient, models
 
+
+# --------------------------------------------------
+# Project imports
+# --------------------------------------------------
 
 ROOT = Path(__file__).resolve().parents[1]
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-
 
 from config.settings import (
     QDRANT_URL,
@@ -35,17 +41,20 @@ from config.settings import (
     validate_configuration,
 )
 
-from phase2_ingestion.ingest_documents import (
-    prepare_documents,
-)
+from phase2_ingestion.ingest_documents import prepare_documents
 
+
+# --------------------------------------------------
+# Initialize services
+# --------------------------------------------------
 
 def create_services():
     """
-    Initialize the embedding model and Qdrant client.
+    Load the embedding model and connect to Qdrant.
 
-    SentenceTransformer loads the local embedding model.
-    QdrantClient connects to your cloud database.
+    Returns:
+        embedding_model: SentenceTransformer instance
+        client: QdrantClient instance
     """
 
     validate_configuration(require_nvidia=False)
@@ -67,12 +76,15 @@ def create_services():
     return embedding_model, client
 
 
+# --------------------------------------------------
+# Ensure collection exists
+# --------------------------------------------------
+
 def ensure_collection(client):
     """
-    Create the collection only if it does not exist.
+    Create the collection if it does not exist.
 
-    Cosine distance compares vector direction and
-    is commonly used for text similarity.
+    Existing collections are preserved.
     """
 
     if client.collection_exists(QDRANT_COLLECTION):
@@ -81,8 +93,6 @@ def ensure_collection(client):
             QDRANT_COLLECTION
         )
 
-        # The collection must be compatible with
-        # our 384-dimensional embedding model.
         vectors = info.config.params.vectors
 
         if not isinstance(vectors, dict):
@@ -95,7 +105,7 @@ def ensure_collection(client):
 
         else:
             raise RuntimeError(
-                "This example expects an unnamed "
+                "This application expects an unnamed "
                 "single-vector Qdrant collection."
             )
 
@@ -113,12 +123,15 @@ def ensure_collection(client):
     print("Created Qdrant collection.")
 
 
+# --------------------------------------------------
+# Create payload indexes
+# --------------------------------------------------
+
 def create_payload_indexes(client):
     """
-    Index metadata fields used for filtering.
+    Create indexes used for topic and source filtering.
 
-    Keyword indexes allow efficient filtering by
-    topic and source type.
+    Existing indexes are preserved.
     """
 
     for field_name in (
@@ -135,15 +148,15 @@ def create_payload_indexes(client):
             )
 
         except Exception as error:
-            # Existing indexes may cause a harmless
-            # "already exists" response.
-            #
-            # We report the issue rather than silently
-            # hiding unexpected configuration errors.
             print(
-                f"Index notice for {field_name}: {error}"
+                f"Index notice for {field_name}: "
+                f"{error}"
             )
 
+
+# --------------------------------------------------
+# Upload document chunks
+# --------------------------------------------------
 
 def upload_documents(
     documents,
@@ -151,16 +164,16 @@ def upload_documents(
     client,
 ):
     """
-    Embed and upload prepared document chunks.
+    Generate embeddings and upload document chunks.
 
-    Each Qdrant point contains:
-        id: unique deterministic chunk ID
-        vector: semantic embedding
-        payload: document text and metadata
+    Deterministic UUIDs prevent duplicate uploads
+    when source URLs and chunk indexes are unchanged.
     """
 
     if not documents:
-        raise ValueError("No documents to upload.")
+        raise ValueError(
+            "No documents to upload."
+        )
 
     texts = [
         document.page_content
@@ -169,7 +182,6 @@ def upload_documents(
 
     print("Generating embeddings...")
 
-    # Encode all document chunks in batches.
     vectors = embedding_model.encode(
         texts,
         batch_size=16,
@@ -185,13 +197,6 @@ def upload_documents(
     ):
 
         metadata = document.metadata
-
-        # A deterministic UUID means re-ingesting the
-        # same source and chunk number updates that
-        # point instead of always creating a new one.
-        #
-        # If chunk boundaries change, old points may
-        # remain. A full refresh needs separate cleanup.
 
         identity = (
             f"{metadata['source']}:"
@@ -216,23 +221,30 @@ def upload_documents(
             )
         )
 
-    # Upload in batches to avoid oversized requests.
     batch_size = 32
 
-    for start in range(0, len(points), batch_size):
-
-        batch = points[
-            start:start + batch_size
-        ]
+    for start in range(
+        0,
+        len(points),
+        batch_size,
+    ):
 
         client.upsert(
             collection_name=QDRANT_COLLECTION,
-            points=batch,
+            points=points[
+                start:start + batch_size
+            ],
             wait=True,
         )
 
-    print(f"Uploaded {len(points)} chunks.")
+    print(
+        f"Uploaded {len(points)} chunks."
+    )
 
+
+# --------------------------------------------------
+# Semantic document retrieval
+# --------------------------------------------------
 
 def search_documents(
     question,
@@ -242,19 +254,36 @@ def search_documents(
     limit=RETRIEVAL_TOP_K,
 ):
     """
-    Find chunks semantically related to a question.
+    Search official documents by semantic similarity.
 
-    Parameters:
-        question: the user's question
-        topic: optional metadata topic filter
-        limit: maximum returned chunks
+    Args:
+        question: User question
+        embedding_model: Loaded SentenceTransformer
+        client: Connected QdrantClient
+        topic: Optional topic filter
+        limit: Maximum number of retrieved documents
 
     Returns:
-        A list of dictionaries containing:
-        text, metadata and similarity score
+        List of dictionaries containing:
+            id: Actual Qdrant point ID
+            text: Retrieved document text
+            metadata: Document metadata
+            score: Similarity score
+
+    Actual point IDs are returned directly from Qdrant,
+    so chunk_index is not required for evaluation.
     """
 
-    # Convert the question into a 384D vector.
+    if not question or not question.strip():
+        raise ValueError(
+            "Question cannot be empty."
+        )
+
+    if limit <= 0:
+        raise ValueError(
+            "Retrieval limit must be greater than zero."
+        )
+
     query_vector = embedding_model.encode(
         question,
         normalize_embeddings=True,
@@ -269,12 +298,13 @@ def search_documents(
         )
     ]
 
-    # Apply topic filtering when requested.
     if topic:
         conditions.append(
             models.FieldCondition(
                 key="metadata.topic",
-                match=models.MatchValue(value=topic),
+                match=models.MatchValue(
+                    value=topic
+                ),
             )
         )
 
@@ -282,7 +312,6 @@ def search_documents(
         must=conditions
     )
 
-    # Query Qdrant using its vector search API.
     response = client.query_points(
         collection_name=QDRANT_COLLECTION,
         query=query_vector,
@@ -297,27 +326,46 @@ def search_documents(
 
         payload = point.payload or {}
 
+        metadata = payload.get(
+            "metadata",
+            {},
+        )
+
+        if not isinstance(metadata, dict):
+            metadata = {}
+
+        text = payload.get(
+            "page_content",
+            "",
+        )
+
+        if not isinstance(text, str):
+            text = ""
+
+        # Skip malformed or empty records.
+        if not text.strip():
+            continue
+
         results.append({
-            "text": payload.get(
-                "page_content",
-                ""
-            ),
-            "metadata": payload.get(
-                "metadata",
-                {}
-            ),
+            "id": str(point.id),
+            "text": text,
+            "metadata": metadata,
             "score": float(point.score),
         })
 
     return results
 
 
+# --------------------------------------------------
+# Standalone Phase 3 execution
+# --------------------------------------------------
+
 def main():
-    """Ingest official webpages into Qdrant."""
 
     embedding_model, client = create_services()
 
     ensure_collection(client)
+
     create_payload_indexes(client)
 
     documents = prepare_documents()
@@ -331,13 +379,19 @@ def main():
     print("\nTesting semantic retrieval...")
 
     results = search_documents(
-        "How do I renew my Irish Residence Permit?",
-        embedding_model,
-        client,
+        question=(
+            "How do I renew my "
+            "Irish Residence Permit?"
+        ),
+        embedding_model=embedding_model,
+        client=client,
         topic="immigration",
     )
 
-    for index, result in enumerate(results, 1):
+    for index, result in enumerate(
+        results,
+        start=1,
+    ):
 
         print(
             f"\nResult {index}: "
@@ -345,13 +399,22 @@ def main():
         )
 
         print(
-            result["metadata"].get(
-                "source",
-                ""
-            )
+            "Document ID:",
+            result["id"],
         )
 
-        print(result["text"][:250])
+        print(
+            "Source:",
+            result["metadata"].get(
+                "source",
+                "",
+            ),
+        )
+
+        print(
+            "Text:",
+            result["text"][:250],
+        )
 
 
 if __name__ == "__main__":

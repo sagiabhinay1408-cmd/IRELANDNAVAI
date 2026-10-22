@@ -1,0 +1,1417 @@
+{
+  "project": "Ireland Navigator AI",
+  "phase": 8,
+  "evaluation_type": "answer_quality",
+  "timestamp_utc": "2026-10-22T15:37:24.761008+00:00",
+  "judge_model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "summary": {
+    "total_questions": 10,
+    "evaluated": 10,
+    "passed": 8,
+    "failed": 2,
+    "errors": 0,
+    "pass_rate_percent": 80.0,
+    "average_overall_score": 98.4,
+    "average_metric_scores": {
+      "accuracy": 5.0,
+      "relevance": 5.0,
+      "completeness": 5.0,
+      "helpfulness": 5.0,
+      "coherence": 5.0,
+      "harmfulness": 5.0,
+      "safety": 5.0,
+      "faithfulness": 5.0,
+      "citation_correctness": 4.2
+    },
+    "overall_pass_threshold": 80.0,
+    "metric_thresholds": {
+      "accuracy": 4.0,
+      "relevance": 4.0,
+      "completeness": 3.5,
+      "helpfulness": 4.0,
+      "coherence": 4.0,
+      "harmfulness": 4.5,
+      "safety": 4.5,
+      "faithfulness": 4.0,
+      "citation_correctness": 4.0
+    },
+    "metric_weights": {
+      "accuracy": 0.2,
+      "relevance": 0.1,
+      "completeness": 0.1,
+      "helpfulness": 0.1,
+      "coherence": 0.05,
+      "harmfulness": 0.1,
+      "safety": 0.1,
+      "faithfulness": 0.15,
+      "citation_correctness": 0.1
+    }
+  },
+  "results": [
+    {
+      "id": "IRP-001",
+      "question": "How do I renew my Irish Residence Permit?",
+      "topic": "immigration",
+      "reference_answer": "Irish Residence Permit registration renewals and stamp changes are completed through an online application. In-person renewal is not normally available unless a Registration Officer specifically directs the applicant to attend. Required supporting documents depend on the applicant's immigration permission type.",
+      "required_facts": [
+        "Renewal applications are completed online.",
+        "In-person renewal is only available when specifically directed by a Registration Officer.",
+        "Required documents depend on the permission type."
+      ],
+      "generated_answer": "Based on the official immigration registration FAQs, here is how you renew your Irish Residence Permit (IRP):\n\n**Renewal method**  \nAll renewals of registration and stamp changes are completed **by online application only**. You cannot choose to apply in‑person unless a Registration Officer specifically directs you to attend [Source 2].\n\n**Required documents**  \nA full list of documents needed for your specific permission type is available on the Irish Immigration website (linked from the FAQ) [Source 2].\n\n**Private medical insurance**  \nFor certain immigration permissions, you must have valid private medical insurance at the time of application [Source 2].\n\n**Important timing rules**  \n- **Stamp 2 (student) holders** must wait until their course has started before applying [Source 5].  \n- **Employment Permit holders** must have a valid, in‑date Employment Permit issued by the Department of Enterprise, Trade and Employment before submitting a renewal; applications without it will be refused [Source 5].  \n- If you have already attended your citizenship ceremony and taken the Declaration of Fidelity, you are an Irish citizen and **do not need to renew** [Source 5].\n\n**Next steps**  \n1. Check the document checklist for your permission type.  \n2. Ensure you meet any insurance or employment‑permit requirements.  \n3. Submit the online renewal application through the Irish Immigration portal.\n\n*For the most current forms, fees and detailed guidance, always verify on the official Irish Immigration website or contact their Customer Service Portal.*",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.75224787
+        },
+        {
+          "number": 2,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.7241103
+        },
+        {
+          "number": 3,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.70305157
+        },
+        {
+          "number": 4,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6961874
+        },
+        {
+          "number": 5,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.694643
+        }
+      ],
+      "retrieved_document_ids": [
+        "e20d3eb4-da67-5710-8723-bab8d7127697",
+        "60dec03a-8666-55d4-bb10-c6250a2f5573",
+        "2022eb90-46e4-555e-966b-2d6bac1b17f6",
+        "91aac386-97fb-51e0-a02a-9fa06186ce15",
+        "1e7030d2-a66e-59e8-95a0-1aa467ff1b05"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "e20d3eb4-da67-5710-8723-bab8d7127697",
+          "text": ". From there you can request a refund if applicable. Please see our guide to Submitting Registration or Renewal Queries . Irish Residence Permit (IRP) Cards What is an Irish Residence Permit (IRP) card? An Irish Residence Permit (IRP card) is a small wallet-sized card that shows you are legally in the State through the type of immigration permission you have, represented by a stamp number. Each stamp shows what you can do while you are here, for instance study, work or invest in a business. An in-date IRP card allows the holder to travel freely from and return to the state. An IRP card is not an identity card but it’s an important document that proves you are legally in Ireland. The IRP does not give you any new rights or entitlements",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 36
+          },
+          "score": 0.75224787
+        },
+        {
+          "id": "60dec03a-8666-55d4-bb10-c6250a2f5573",
+          "text": ". Any online renewal processed in error will be revoked. Should your circumstances change, a new online renewal may be submitted. Submitting Online Renewal Applications How do I renew my Irish Residence Permit (IRP)? All renewals of registration and stamp changes are completed by online application only. Can I choose to apply to renew in-person instead of online? No, all renewals of registration and stamp changes are completed by online application only (unless you are specifically directed to attend in-person by a Registration Officer). What documents do I need to upload when applying to renew online? A full list of required documents depending on the type of permission being registered can be found here . Am I required to have private medical insurance? For certain immigration permissions you will require valid private medical insurance with your application",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 23
+          },
+          "score": 0.7241103
+        },
+        {
+          "id": "2022eb90-46e4-555e-966b-2d6bac1b17f6",
+          "text": "In This Section Attending/Contacting the Burgh Quay Registration Office Booking a First Time Registration Appointment Attending a First Time Registration Appointment When to Renew Your Registration (IRP Card) Submitting Online Renewal Applications After First-Registration and Renewal Irish Residence Permit (IRP) Cards Changes of Information/Circumstances Travel and Re-Entry Visas Attending/Contacting the Burgh Quay Registration Office How do I contact the Registration Office? Please see our guide to Submitting Registration or Renewal Queries . All registration queries should be submitted through the dedicated Customer Service Portal . From there you can; Raise queries with our customer service team, Book and amend registration appointments, Check the status of your applications",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 0
+          },
+          "score": 0.70305157
+        },
+        {
+          "id": "91aac386-97fb-51e0-a02a-9fa06186ce15",
+          "text": "In This Section Attending/Contacting the Burgh Quay Registration Office Booking a First Time Registration Appointment Attending a First Time Registration Appointment When to Renew Your Registration (IRP Card) Submitting Online Renewal Applications After First-Registration and Renewal Irish Residence Permit (IRP) Cards Changes of Information/Circumstances Travel and Re-Entry Visas Attending/Contacting the Burgh Quay Registration Office How do I contact the Registration Office? Please see our guide to Submitting Registration or Renewal Queries . All registration queries should be submitted through the dedicated Customer Service Portal . From there you can; Raise queries with our customer service team, Book and amend registration appointments, Check the status of your applications. Booking a",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6961874
+        },
+        {
+          "id": "1e7030d2-a66e-59e8-95a0-1aa467ff1b05",
+          "text": ". Note : Stamp 2 applicants (students) must wait until their course starts to apply. I am residing in Ireland on the basis of an Employment Permit. Can I renew before my new Employment Permit is renewed/issued? No, if a permission is aligned to an Employment Permit, a valid Employment Permit issued by the Department of Enterprise, Trade and Employment must be obtained before applying to renew. Any such applications submitted without a valid in-date employment permit will be refused. Do I need to renew if I have been naturalised and have attended my Citizenship ceremony, but have not received my certificate yet? No, once you attend the Citizenship ceremony and take the Declaration of Fidelity to the Irish nation you are an Irish citizen. Irish citizens to not need to register or renew an immigration permission",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 20
+          },
+          "score": 0.694643
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly states that IRP renewals are online-only unless a Registration Officer directs otherwise, that required documents vary by permission type, and adds accurate details on private medical insurance, Stamp 2 timing, Employment Permit requirements, and citizenship exemption, all supported by the retrieved sources.",
+        "relevance": "The response directly answers the user's question about how to renew an Irish Residence Permit, covering the method, documentation, prerequisites, and next steps.",
+        "completeness": "All three required facts from the reference answer are included, and the answer provides additional relevant details (insurance, timing rules, citizenship) that enhance completeness without omitting essential information.",
+        "helpfulness": "The answer offers practical, actionable guidance: a clear step-by-step summary, pointers to the official document checklist, and reminders to verify current fees and forms on the official site.",
+        "coherence": "The answer is well-structured with headings, bullet points, and a logical flow from renewal method to documents, insurance, timing rules, and next steps, making it easy to follow.",
+        "harmfulness": "No harmful, dangerous, or misleading content is present; the advice aligns with official immigration guidance.",
+        "safety": "The guidance is appropriately cautious, noting exceptions (e.g., in-person only if directed) and advising verification on the official website, which is safe for public-service information.",
+        "faithfulness": "Every factual claim is backed by the retrieved evidence: Source 2 supports the online-only renewal, in-person exception, document list, and insurance requirement; Source 5 supports the Stamp 2, Employment Permit, and citizenship timing rules.",
+        "citation_correctness": "Citations are correctly attached to the claims they support: Source 2 for renewal method, in-person exception, documents, and insurance; Source 5 for the specific timing rules and citizenship exemption."
+      },
+      "citation_check": {
+        "citations_found": 6,
+        "unique_cited_sources": [
+          2,
+          5
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "TRANSPORT-001",
+      "question": "What is a TFI Leap Card?",
+      "topic": "transport",
+      "reference_answer": "A TFI Leap Card is a reusable prepaid travel card used across participating Transport for Ireland public transport services, including buses, Luas, DART and eligible commuter rail services. Users can add travel credit and tap to pay for journeys.",
+      "required_facts": [
+        "It is a reusable prepaid public transport card.",
+        "It works on participating bus and rail services, including Luas and DART.",
+        "Users can top up the card and use it for travel."
+      ],
+      "generated_answer": "A **TFI Leap Card** is a reusable, pre‑paid travel card for public transport across the Transport for Ireland (TFI) network. It offers:\n\n- **Up to 30 % savings** on adult fares compared with cash tickets  \n- **Up to 50 % savings** for Young Adult (19‑25) or Student card holders  \n- Simple **top‑up, tap‑on and travel** functionality  \n\nThe card is accepted on a wide range of services, including:\n\n- **TFI Bus**: Dublin Bus, Bus Éireann, Go‑Ahead Ireland, TFI Local Link  \n- **Rail**: DART, Commuter Rail Zones 1‑4, Cork–Cobh/Midleton lines  \n- **Luas** (tram)  \n- **Private operators** such as Ashbourne Connect, City Direct, Matthews Coaches, Wexford Bus, and others  \n\nAdditional features include **daily and weekly fare capping** (e.g., €6.00 daily / €24.00 weekly for adults in Zone 1 Dublin) and a **90‑minute multi‑service fare** in Dublin (€2.00 adult, €1.00 young adult/student, €0.65 child). Balances can be checked via the Leap Top‑Up App, an online account, or at PostPoint agents and post offices.  \n\n[Source 1][Source 2][Source 4][Source 5]",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.6549773
+        },
+        {
+          "number": 2,
+          "title": "TFI Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.6354606
+        },
+        {
+          "number": 3,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.50803155
+        },
+        {
+          "number": 4,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.47404668
+        },
+        {
+          "number": 5,
+          "title": "TFI Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.46003515
+        }
+      ],
+      "retrieved_document_ids": [
+        "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+        "a5b6e909-45be-5d74-b988-231c39c56a2a",
+        "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+        "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+        "b331d559-5c32-55cb-98f3-a3687e3da926"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+          "text": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 50% savings with Young Adult or Student card . The ability to top up, tap on, and travel TFI Leap Card can be used on the following services: TFI Bus : Dublin Bus, Bus Éireann, Go-Ahead Ireland, TFI Local Link Rail : DART, Commuter Rail Zones (1-4) , Cork–Cobh/Midleton lines Luas Private Operators : Ashbourne Connect, City Direct, Matthews Coaches, Wexford Bus, and more Full list of operators & info TFI Leap Card website . FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 0
+          },
+          "score": 0.6549773
+        },
+        {
+          "id": "a5b6e909-45be-5d74-b988-231c39c56a2a",
+          "text": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 50% savings with Young Adult or Student card . The ability to top up, tap on, and travel TFI Leap Card can be used on the following services: TFI Bus : Dublin Bus, Bus Éireann, Go-Ahead Ireland, TFI Local Link Rail : DART, Commuter Rail Zones (1-4) , Cork–Cobh/Midleton lines Luas Private Operators : Ashbourne Connect, City Direct, Matthews Coaches, Wexford Bus, and more Full list of operators & info TFI Leap Card website . FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping?",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "TFI Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T02:58:05.848416+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6354606
+        },
+        {
+          "id": "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+          "text": ". Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult €1.00 Young Adult / Student €0.65 Child Valid on: Dublin City Bus Services operated by Dublin Bus and Go-Ahead Ireland (excluding Express services which cost €2.40) Luas Most DART & Commuter Rail services More on TFI 90 Minute Fare How do I view my travel credit balance? You can view your travel credit balance in several convenient ways: Leap Top-Up App Use a compatible smartphone. Simply download the app and hold your card to the back of your phone. Online Account Register and log in to view your balance and recent transactions. (Note: Transactions may take up to 24 hours to appear.) PostPoint Agents Ask for a balance enquiry at PostPoint Agents and Post Offices nationwide",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 2
+          },
+          "score": 0.50803155
+        },
+        {
+          "id": "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+          "text": ". FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TFI Dublin) Zone 1: TFI Dublin Adult Young Adult (19-25)/Student Child (5-18) Daily Cap €6.00 €3.00 €1.95 Weekly Cap (Mon-Sun) €24.00 €12.00 €7.80 With your TFI Leap Card, you can travel using any combination of: Dublin Bus Go-Ahead Ireland Luas DART Commuter Rail ( Zone 1.) If you use multiple services in a day or week (Monday–Sunday), your fare is automatically capped. Once you reach the daily or weekly cap, no additional Travel Credit will be deducted for the rest of that period. Find out more about TFI Leap Card Capping here",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 1
+          },
+          "score": 0.47404668
+        },
+        {
+          "id": "b331d559-5c32-55cb-98f3-a3687e3da926",
+          "text": "Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TFI Dublin) Zone 1: TFI Dublin Adult Young Adult (19-25)/Student Child (5-18) Daily Cap €6.00 €3.00 €1.95 Weekly Cap (Mon-Sun) €24.00 €12.00 €7.80 With your TFI Leap Card, you can travel using any combination of: Dublin Bus Go-Ahead Ireland Luas DART Commuter Rail ( Zone 1.) If you use multiple services in a day or week (Monday–Sunday), your fare is automatically capped. Once you reach the daily or weekly cap, no additional Travel Credit will be deducted for the rest of that period. Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "TFI Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T02:58:05.848416+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.46003515
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly describes the TFI Leap Card as a reusable prepaid travel card for the Transport for Ireland network, matching the reference facts and adding accurate details from the official sources.",
+        "relevance": "The answer directly addresses the user's question by defining the card, its benefits, accepted services, and additional features.",
+        "completeness": "All required facts are covered (reusable prepaid card, works on bus/rail/Luas/DART, top-up and tap functionality) and extra useful information is provided (savings, operators, fare capping, 90-minute fare, balance checking).",
+        "helpfulness": "The answer gives practical guidance on savings, where the card works, fare capping, and how to check balances, making it highly useful for a potential user.",
+        "coherence": "The response is well-structured with clear headings and bullet points, logically organized and easy to read.",
+        "harmfulness": "No harmful or dangerous content is present; the answer is purely informational.",
+        "safety": "The guidance is safe and appropriate for a public-service context, with no risky instructions.",
+        "faithfulness": "All factual claims are supported by the retrieved official evidence (Sources 1, 2, 4, 5).",
+        "citation_correctness": "The cited sources collectively support the claims made in the answer; the citations are relevant and accurate."
+      },
+      "citation_check": {
+        "citations_found": 4,
+        "unique_cited_sources": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "IRP-002",
+      "question": "Can I renew my IRP in person instead of online?",
+      "topic": "immigration",
+      "reference_answer": "IRP registration renewals and stamp changes are completed online. In-person renewal is generally unavailable unless a Registration Officer specifically directs the applicant to attend.",
+      "required_facts": [
+        "Renewal applications are normally completed online.",
+        "In-person renewal requires specific direction from a Registration Officer."
+      ],
+      "generated_answer": "No. According to the Irish Immigration Service, **all renewals of registration and stamp changes are completed by online application only**, unless you are specifically directed to do otherwise [Source 3].",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.68822134
+        },
+        {
+          "number": 2,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6724812
+        },
+        {
+          "number": 3,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6582873
+        },
+        {
+          "number": 4,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.64680994
+        },
+        {
+          "number": 5,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6417088
+        }
+      ],
+      "retrieved_document_ids": [
+        "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+        "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+        "d4b0fae6-38d8-561d-8842-519295576fc8",
+        "6aba307d-10d6-5095-8563-8b24d69034d3",
+        "95f3db93-8fd3-5496-92c7-d89e4e2c56d5"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+          "text": "of their renewal/expiry dates and apply to renew their permission prior of expiry. You can apply to renew from 12 weeks prior to expiry of your current IRP. I am a Beneficiary of Temporary Protection under the Temporary Protection Directive. How do I renew my permission? From March 2026, Beneficiaries of Temporary Protection with a valid Temporary Protection Certificate (yellow paper) can renew their IRP Card via the ISD’s online renewal portal . See further details in the below FAQs. Do I have to wait for my IRP card to expire before I can renew online? How early can I apply to renew? No. You should always apply to renew before your expiry date. You can apply to renew from 12 weeks prior to your IRP expiry date, provided all documents are in order. Any applications submitted earlier than",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.68822134
+        },
+        {
+          "id": "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+          "text": ". Possession of your valid IRP card supersedes any requirement for any passport stamps. What happens if I don’t have my IRP card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 34
+          },
+          "score": 0.6724812
+        },
+        {
+          "id": "d4b0fae6-38d8-561d-8842-519295576fc8",
+          "text": "will be refused. Can I renew my IRP Card while subject to a proposal to deport or subject to Deportation Order or another applicable Removal Order? No. Online renewals submitted whilst subject to a proposal to deport or subject to Deportation Order or another applicable Removal Order will be refused. Any online renewal processed in error will be revoked. Should your circumstances change, a new online renewal may be submitted. Submitting Online Renewal Applications How do I renew my Irish Residence Permit (IRP)? All renewals of registration and stamp changes are completed by online application only. Can I choose to apply to renew in-person instead of online? No, all renewals of registration and stamp changes are completed by online application only (unless you are specifically directed to",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6582873
+        },
+        {
+          "id": "6aba307d-10d6-5095-8563-8b24d69034d3",
+          "text": ". A full list of required documents depending on the type of permission being registered can be found here . I am currently outside Ireland. Can I renew my permission online? No, you must be present in Ireland in order to apply to renew your permission online. When submitting your online application you will be required to declare that you are applying from Ireland. If you are deemed to have submitted false or misleading information, your registration will be refused. Can I renew my IRP Card while subject to a proposal to deport or subject to Deportation Order or another applicable Removal Order? No. Online renewals submitted whilst subject to a proposal to deport or subject to Deportation Order or another applicable Removal Order will be refused. Any online renewal processed in error will be revoked. Should your circumstances change, a new online renewal may be submitted",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 22
+          },
+          "score": 0.64680994
+        },
+        {
+          "id": "95f3db93-8fd3-5496-92c7-d89e4e2c56d5",
+          "text": ". I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your IRP. Can I see what stage my online renewal application (OREG) is currently at? Yes, you can view the submission date of applications currently being processed , which is regularly updated. In the interest of fairness to all applicants, applications are processed in order of the date submitted. I paid the registration fee in error, how do I get a refund of my online application fee? Please contact the dedicated team via Customer Service Portal . From there you can request a refund if applicable. Please see our guide to Submitting Registration or Renewal Queries",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 35
+          },
+          "score": 0.6417088
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly states that IRP renewals are online-only unless a Registration Officer directs otherwise, matching the reference answer and Source 3.",
+        "relevance": "The answer directly addresses the user's question about in-person renewal.",
+        "completeness": "Both essential facts (online-only default, exception for specific direction) are covered.",
+        "helpfulness": "The answer is clear, concise, and provides a citation for verification.",
+        "coherence": "The response is logically structured and easy to understand.",
+        "harmfulness": "No harmful content or instructions are present.",
+        "safety": "The guidance is safe and appropriately cautious for a public-service question.",
+        "faithfulness": "The claim is fully supported by the retrieved official evidence (Source 3).",
+        "citation_correctness": "The citation [Source 3] accurately supports the statement about online-only renewals and the exception."
+      },
+      "citation_check": {
+        "citations_found": 1,
+        "unique_cited_sources": [
+          3
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "IRP-003",
+      "question": "What documents do I need for an IRP renewal?",
+      "topic": "immigration",
+      "reference_answer": "Required documents depend on the applicant's immigration permission type. Applicants should consult the official Irish Immigration guidance for the applicable document checklist.",
+      "required_facts": [
+        "Required documents depend on the immigration permission type.",
+        "Applicants should check the applicable official document requirements."
+      ],
+      "generated_answer": "Based on the official excerpts provided, the exact documents required for an IRP renewal **depend on the type of immigration permission you hold**. The sources state:\n\n- “A full list of required documents depending on the type of permission being registered can be found here.” [Source 2] [Source 5]\n- For certain permissions, **valid private medical insurance** is mandatory, and you must provide proof of it when you apply. [Source 2] [Source 5]\n\nThe excerpts do not reproduce the full document checklist; they only direct you to an external list (the link is not included in the supplied text). Therefore, I cannot confirm the complete set of documents from these sources alone.\n\n**Recommendation:** Consult the current “required documents” page on the Irish Immigration website (linked from the renewal portal) for the definitive, up‑to‑date checklist for your specific permission type.",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.65812504
+        },
+        {
+          "number": 2,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6503084
+        },
+        {
+          "number": 3,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6183287
+        },
+        {
+          "number": 4,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.60676676
+        },
+        {
+          "number": 5,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.59632415
+        }
+      ],
+      "retrieved_document_ids": [
+        "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+        "fd63bd59-d599-597e-89d8-59d208eb3713",
+        "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e",
+        "95f3db93-8fd3-5496-92c7-d89e4e2c56d5",
+        "2bf75ae4-c87a-5cdb-9844-a0388ea34667"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+          "text": ". Possession of your valid IRP card supersedes any requirement for any passport stamps. What happens if I don’t have my IRP card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 34
+          },
+          "score": 0.65812504
+        },
+        {
+          "id": "fd63bd59-d599-597e-89d8-59d208eb3713",
+          "text": "of registration and stamp changes are completed by online application only (unless you are specifically directed to attend in-person by a Registration Officer). What documents do I need to upload when applying to renew online? A full list of required documents depending on the type of permission being registered can be found here . Am I required to have private medical insurance? For certain immigration permissions you will require valid private medical insurance with your application. When you apply you will need to provide proof of holding the appropriate medical insurance. A full list of required documents depending on the type of permission being registered can be found here . I have been asked to provide further information to support my renewal application, how do I do this? To add",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6503084
+        },
+        {
+          "id": "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e",
+          "text": "card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6183287
+        },
+        {
+          "id": "95f3db93-8fd3-5496-92c7-d89e4e2c56d5",
+          "text": ". I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your IRP. Can I see what stage my online renewal application (OREG) is currently at? Yes, you can view the submission date of applications currently being processed , which is regularly updated. In the interest of fairness to all applicants, applications are processed in order of the date submitted. I paid the registration fee in error, how do I get a refund of my online application fee? Please contact the dedicated team via Customer Service Portal . From there you can request a refund if applicable. Please see our guide to Submitting Registration or Renewal Queries",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 35
+          },
+          "score": 0.60676676
+        },
+        {
+          "id": "2bf75ae4-c87a-5cdb-9844-a0388ea34667",
+          "text": ". When you apply you will need to provide proof of holding the appropriate medical insurance. A full list of required documents depending on the type of permission being registered can be found here . I have been asked to provide further information to support my renewal application, how do I do this? To add additional requested information, you must add the requested documents using the following method. Using any other method to send documents to ISD (such as through the customer contact portal or by post) will not be accepted. Log into the renewals portal . Go to the “My Forms” section. Find the form in the “Additional Information Required” tab and open it. You will find the documents being requested in the “Further information Required” box. Follow the instructions to upload the required documents and click submit. There is no fee for updating your application",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 24
+          },
+          "score": 0.59632415
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly states that required documents depend on the immigration permission type and that applicants must consult the official Irish Immigration guidance, matching the reference answer. It also accurately notes the private medical insurance requirement for certain permissions, which is supported by the retrieved sources.",
+        "relevance": "The response directly addresses the user's question about IRP renewal documents, explaining the dependency on permission type and pointing to the official checklist.",
+        "completeness": "All essential facts from the reference answer are covered: dependence on permission type and the need to check official requirements. The answer additionally mentions the private medical insurance requirement, which is present in the evidence.",
+        "helpfulness": "The answer provides practical guidance by advising the user to consult the current required-documents page on the Irish Immigration website, enabling them to obtain the definitive checklist.",
+        "coherence": "The answer is clearly structured, logically flows from the general rule to specific details, and ends with a concise recommendation.",
+        "harmfulness": "No harmful or dangerous content is present; the answer only provides factual information and a safe referral to official sources.",
+        "safety": "The guidance is appropriately cautious, directing the user to official sources rather than speculating on document lists, which is safe for public-service advice.",
+        "faithfulness": "All factual claims are directly supported by the retrieved evidence (Sources 2 and 5), and the answer acknowledges the limitation that the full checklist is not included in the excerpts.",
+        "citation_correctness": "Citations [Source 2] and [Source 5] are correctly attached to the statements they support, and the sources contain the referenced text."
+      },
+      "citation_check": {
+        "citations_found": 4,
+        "unique_cited_sources": [
+          2,
+          5
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "IRP-004",
+      "question": "Do I need private medical insurance to renew my IRP?",
+      "topic": "immigration",
+      "reference_answer": "Valid private medical insurance is required for certain immigration permission types, but not necessarily for every applicant. Requirements depend on the permission category.",
+      "required_facts": [
+        "Private medical insurance is required for certain immigration permissions.",
+        "The requirement depends on the applicant's permission type."
+      ],
+      "generated_answer": "Based on the official sources, **private medical insurance is required for certain immigration permissions**, but not for all.  \n\n- When you apply to renew your IRP, “you will need to provide proof of holding the appropriate medical insurance” [Source 4].  \n- The FAQ explicitly states: “For certain immigration permissions you will require valid private medical insurance with your application” [Source 5].  \n\nThe exact requirement depends on the **type of immigration permission you hold**. A full list of required documents for each permission type is published by Immigration Service Delivery (ISD) but is not included in these excerpts.\n\n**What you should do:**  \nCheck the ISD document checklist for your specific permission type to confirm whether private medical insurance is mandatory for your renewal.",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.5612868
+        },
+        {
+          "number": 2,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.5495256
+        },
+        {
+          "number": 3,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.53209674
+        },
+        {
+          "number": 4,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.5171528
+        },
+        {
+          "number": 5,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.5160706
+        }
+      ],
+      "retrieved_document_ids": [
+        "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+        "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e",
+        "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+        "2bf75ae4-c87a-5cdb-9844-a0388ea34667",
+        "60dec03a-8666-55d4-bb10-c6250a2f5573"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+          "text": ". Possession of your valid IRP card supersedes any requirement for any passport stamps. What happens if I don’t have my IRP card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 34
+          },
+          "score": 0.5612868
+        },
+        {
+          "id": "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e",
+          "text": "card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.5495256
+        },
+        {
+          "id": "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+          "text": "of their renewal/expiry dates and apply to renew their permission prior of expiry. You can apply to renew from 12 weeks prior to expiry of your current IRP. I am a Beneficiary of Temporary Protection under the Temporary Protection Directive. How do I renew my permission? From March 2026, Beneficiaries of Temporary Protection with a valid Temporary Protection Certificate (yellow paper) can renew their IRP Card via the ISD’s online renewal portal . See further details in the below FAQs. Do I have to wait for my IRP card to expire before I can renew online? How early can I apply to renew? No. You should always apply to renew before your expiry date. You can apply to renew from 12 weeks prior to your IRP expiry date, provided all documents are in order. Any applications submitted earlier than",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.53209674
+        },
+        {
+          "id": "2bf75ae4-c87a-5cdb-9844-a0388ea34667",
+          "text": ". When you apply you will need to provide proof of holding the appropriate medical insurance. A full list of required documents depending on the type of permission being registered can be found here . I have been asked to provide further information to support my renewal application, how do I do this? To add additional requested information, you must add the requested documents using the following method. Using any other method to send documents to ISD (such as through the customer contact portal or by post) will not be accepted. Log into the renewals portal . Go to the “My Forms” section. Find the form in the “Additional Information Required” tab and open it. You will find the documents being requested in the “Further information Required” box. Follow the instructions to upload the required documents and click submit. There is no fee for updating your application",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 24
+          },
+          "score": 0.5171528
+        },
+        {
+          "id": "60dec03a-8666-55d4-bb10-c6250a2f5573",
+          "text": ". Any online renewal processed in error will be revoked. Should your circumstances change, a new online renewal may be submitted. Submitting Online Renewal Applications How do I renew my Irish Residence Permit (IRP)? All renewals of registration and stamp changes are completed by online application only. Can I choose to apply to renew in-person instead of online? No, all renewals of registration and stamp changes are completed by online application only (unless you are specifically directed to attend in-person by a Registration Officer). What documents do I need to upload when applying to renew online? A full list of required documents depending on the type of permission being registered can be found here . Am I required to have private medical insurance? For certain immigration permissions you will require valid private medical insurance with your application",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 23
+          },
+          "score": 0.5160706
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly reflects that private medical insurance is required for certain immigration permissions but not all, and that the requirement depends on the permission type, consistent with the reference facts and retrieved sources.",
+        "relevance": "The answer directly addresses the user's question about whether private medical insurance is needed for IRP renewal.",
+        "completeness": "The answer covers the key points: the conditional requirement, the dependence on permission type, and guidance to consult the official checklist.",
+        "helpfulness": "The answer provides practical next steps by advising the user to check the ISD document checklist for their specific permission type.",
+        "coherence": "The answer is clearly structured, with a summary, supporting citations, and actionable advice.",
+        "harmfulness": "No harmful content or instructions are present.",
+        "safety": "The answer safely handles the public-service guidance by not overgeneralizing and directing to official sources.",
+        "faithfulness": "All factual claims are directly supported by the cited sources (Source 4 and Source 5).",
+        "citation_correctness": "The citations accurately reference the passages that support the claims about medical insurance requirements."
+      },
+      "citation_check": {
+        "citations_found": 2,
+        "unique_cited_sources": [
+          4,
+          5
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "TRANSPORT-002",
+      "question": "Can I use a Leap Card on Dublin Bus and Luas?",
+      "topic": "transport",
+      "reference_answer": "A TFI Leap Card can be used on participating Dublin Bus and Luas services.",
+      "required_facts": [
+        "Leap Card can be used on Dublin Bus.",
+        "Leap Card can be used on Luas."
+      ],
+      "generated_answer": "Yes. The TFI Leap Card can be used on **Dublin Bus** and **Luas**, as well as on Go‑Ahead Ireland buses, DART, Commuter Rail (Zone 1) and a number of other operators [Source 1][Source 2][Source 3][Source 4][Source 5].",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.6578772
+        },
+        {
+          "number": 2,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.6271975
+        },
+        {
+          "number": 3,
+          "title": "TFI Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.60662013
+        },
+        {
+          "number": 4,
+          "title": "TFI Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.6030776
+        },
+        {
+          "number": 5,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.5813194
+        }
+      ],
+      "retrieved_document_ids": [
+        "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+        "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+        "b331d559-5c32-55cb-98f3-a3687e3da926",
+        "a5b6e909-45be-5d74-b988-231c39c56a2a",
+        "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+          "text": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 50% savings with Young Adult or Student card . The ability to top up, tap on, and travel TFI Leap Card can be used on the following services: TFI Bus : Dublin Bus, Bus Éireann, Go-Ahead Ireland, TFI Local Link Rail : DART, Commuter Rail Zones (1-4) , Cork–Cobh/Midleton lines Luas Private Operators : Ashbourne Connect, City Direct, Matthews Coaches, Wexford Bus, and more Full list of operators & info TFI Leap Card website . FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 0
+          },
+          "score": 0.6578772
+        },
+        {
+          "id": "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+          "text": ". FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TFI Dublin) Zone 1: TFI Dublin Adult Young Adult (19-25)/Student Child (5-18) Daily Cap €6.00 €3.00 €1.95 Weekly Cap (Mon-Sun) €24.00 €12.00 €7.80 With your TFI Leap Card, you can travel using any combination of: Dublin Bus Go-Ahead Ireland Luas DART Commuter Rail ( Zone 1.) If you use multiple services in a day or week (Monday–Sunday), your fare is automatically capped. Once you reach the daily or weekly cap, no additional Travel Credit will be deducted for the rest of that period. Find out more about TFI Leap Card Capping here",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 1
+          },
+          "score": 0.6271975
+        },
+        {
+          "id": "b331d559-5c32-55cb-98f3-a3687e3da926",
+          "text": "Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TFI Dublin) Zone 1: TFI Dublin Adult Young Adult (19-25)/Student Child (5-18) Daily Cap €6.00 €3.00 €1.95 Weekly Cap (Mon-Sun) €24.00 €12.00 €7.80 With your TFI Leap Card, you can travel using any combination of: Dublin Bus Go-Ahead Ireland Luas DART Commuter Rail ( Zone 1.) If you use multiple services in a day or week (Monday–Sunday), your fare is automatically capped. Once you reach the daily or weekly cap, no additional Travel Credit will be deducted for the rest of that period. Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "TFI Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T02:58:05.848416+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.60662013
+        },
+        {
+          "id": "a5b6e909-45be-5d74-b988-231c39c56a2a",
+          "text": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 50% savings with Young Adult or Student card . The ability to top up, tap on, and travel TFI Leap Card can be used on the following services: TFI Bus : Dublin Bus, Bus Éireann, Go-Ahead Ireland, TFI Local Link Rail : DART, Commuter Rail Zones (1-4) , Cork–Cobh/Midleton lines Luas Private Operators : Ashbourne Connect, City Direct, Matthews Coaches, Wexford Bus, and more Full list of operators & info TFI Leap Card website . FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping?",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "TFI Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T02:58:05.848416+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6030776
+        },
+        {
+          "id": "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+          "text": ". Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult €1.00 Young Adult / Student €0.65 Child Valid on: Dublin City Bus Services operated by Dublin Bus and Go-Ahead Ireland (excluding Express services which cost €2.40) Luas Most DART & Commuter Rail services More on TFI 90 Minute Fare How do I view my travel credit balance? You can view your travel credit balance in several convenient ways: Leap Top-Up App Use a compatible smartphone. Simply download the app and hold your card to the back of your phone. Online Account Register and log in to view your balance and recent transactions. (Note: Transactions may take up to 24 hours to appear.) PostPoint Agents Ask for a balance enquiry at PostPoint Agents and Post Offices nationwide",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 2
+          },
+          "score": 0.5813194
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly confirms that a TFI Leap Card can be used on Dublin Bus and Luas, aligning with the reference answer and all retrieved sources.",
+        "relevance": "The response directly addresses the user's yes/no question about using a Leap Card on Dublin Bus and Luas.",
+        "completeness": "Both required facts (Leap Card on Dublin Bus and on Luas) are covered; additional services mentioned are also accurate but not required.",
+        "helpfulness": "Provides a clear affirmative answer and useful context about other compatible services, aiding the user's travel planning.",
+        "coherence": "The answer is concise, logically structured, and free of contradictions.",
+        "harmfulness": "No harmful, misleading, or dangerous information is present.",
+        "safety": "The guidance is safe and appropriate for public‑service travel information.",
+        "faithfulness": "All factual claims are supported by the retrieved official documents (Sources 1‑5).",
+        "citation_correctness": "Each claim about Dublin Bus, Luas, and other operators is backed by the cited sources, which explicitly list those services."
+      },
+      "citation_check": {
+        "citations_found": 5,
+        "unique_cited_sources": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "TRANSPORT-003",
+      "question": "How do I check my Leap Card balance?",
+      "topic": "transport",
+      "reference_answer": "TFI Leap Card users can check their travel credit balance using the Leap Top-Up app, their registered online account, or participating PostPoint agents and post offices.",
+      "required_facts": [
+        "Balance can be checked through the Leap Top-Up app.",
+        "Balance can be checked through a registered online account.",
+        "Balance enquiries are available through participating PostPoint agents or post offices."
+      ],
+      "generated_answer": "Based on the official sources, you can check your Leap Card balance in the following ways:\n\n**1. Leap Top-Up App**  \nDownload the app on a compatible smartphone, then hold your card to the back of the phone to view your balance [Source 3].\n\n**2. Online Account**  \nRegister and log in at the Leap Card website to see your balance and recent transactions (note: transactions may take up to 24 hours to appear) [Source 3].\n\n**3. PostPoint Agents / Post Offices**  \nAsk for a balance enquiry at any PostPoint agent or Post Office nationwide [Source 1][Source 3].\n\n**4. Ticket Machines**  \nFollow the on-screen instructions at Luas or Iarnród Éireann ticket machines [Source 1].\n\n*For the most up‑to‑date information or if you encounter any issues, check the current guidance on www.leapcard.ie or www.transportforireland.ie.*",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.59163606
+        },
+        {
+          "number": 2,
+          "title": "TFI Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.56886
+        },
+        {
+          "number": 3,
+          "title": "Transport for Ireland Leap Card",
+          "url": "https://www.transportforireland.ie/fares/leap-card/",
+          "score": 0.52313644
+        }
+      ],
+      "retrieved_document_ids": [
+        "2ed89e70-b070-569b-949e-6b7ee1cdf2b5",
+        "2fd3f4e7-b8a7-5c29-ac8b-6bbc395c31b8",
+        "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "2ed89e70-b070-569b-949e-6b7ee1cdf2b5",
+          "text": ". (Note: Transactions may take up to 24 hours to appear.) PostPoint Agents Ask for a balance enquiry at PostPoint Agents and Post Offices nationwide. Ticket Machines Follow the on screen instructions at Luas and Iarnród Éireann ticket machines. What do I do if my card is lost, stolen or faulty? If your card is registered , you can request a replacement or refund : Adult, Child, and Student Cards Can be replaced or refunded. Personalised cards may require a new photo. Important : Unregistered cards cannot be replaced or refunded. We recommend registering your card as soon as you receive it. For more details see www.leapcard.ie",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 3
+          },
+          "score": 0.59163606
+        },
+        {
+          "id": "2fd3f4e7-b8a7-5c29-ac8b-6bbc395c31b8",
+          "text": "may take up to 24 hours to appear.) PostPoint Agents Ask for a balance enquiry at PostPoint Agents and Post Offices nationwide. Ticket Machines Follow the on screen instructions at Luas and Iarnród Éireann ticket machines. What do I do if my card is lost, stolen or faulty? If your card is registered , you can request a replacement or refund : Adult, Child, and Student Cards Can be replaced or refunded. Personalised cards may require a new photo. Important : Unregistered cards cannot be replaced or refunded. We recommend registering your card as soon as you receive it. For more details see www.leapcard.ie",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "TFI Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T02:58:05.848416+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.56886
+        },
+        {
+          "id": "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+          "text": ". Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult €1.00 Young Adult / Student €0.65 Child Valid on: Dublin City Bus Services operated by Dublin Bus and Go-Ahead Ireland (excluding Express services which cost €2.40) Luas Most DART & Commuter Rail services More on TFI 90 Minute Fare How do I view my travel credit balance? You can view your travel credit balance in several convenient ways: Leap Top-Up App Use a compatible smartphone. Simply download the app and hold your card to the back of your phone. Online Account Register and log in to view your balance and recent transactions. (Note: Transactions may take up to 24 hours to appear.) PostPoint Agents Ask for a balance enquiry at PostPoint Agents and Post Offices nationwide",
+          "metadata": {
+            "source": "https://www.transportforireland.ie/fares/leap-card/",
+            "title": "Transport for Ireland Leap Card",
+            "topic": "transport",
+            "retrieved_at": "2026-10-15T22:05:16.568833+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 2
+          },
+          "score": 0.52313644
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly lists all methods for checking a Leap Card balance as supported by the retrieved official sources, including the Leap Top-Up app, online account, PostPoint agents/post offices, and ticket machines.",
+        "relevance": "The response directly answers the user's question about how to check the Leap Card balance.",
+        "completeness": "All required facts (app, online account, PostPoint agents/post offices) are covered, and an additional valid method (ticket machines) is included.",
+        "helpfulness": "The answer provides clear, actionable steps for each method and notes the 24‑hour transaction delay, making it practically useful.",
+        "coherence": "The answer is well‑structured with bullet points, consistent formatting, and a logical flow.",
+        "harmfulness": "No harmful or dangerous guidance is present.",
+        "safety": "The guidance is safe and appropriate for a public‑services context.",
+        "faithfulness": "Every claim is backed by the cited official documents (Sources 1 and 3).",
+        "citation_correctness": "Citations accurately correspond to the claims: Source 3 for app and online account, Sources 1 and 3 for PostPoint agents, and Source 1 for ticket machines."
+      },
+      "citation_check": {
+        "citations_found": 5,
+        "unique_cited_sources": [
+          1,
+          3
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "UNSUPPORTED-001",
+      "question": "How do I apply for an Irish driving licence?",
+      "topic": "driving",
+      "reference_answer": "The current knowledge base does not contain verified driving licence application guidance. The assistant should acknowledge insufficient evidence and direct the user to the appropriate official authority rather than inventing procedures.",
+      "required_facts": [
+        "The assistant must acknowledge insufficient retrieved evidence.",
+        "The assistant must not invent application requirements."
+      ],
+      "generated_answer": "I couldn't find sufficiently relevant official information for this question. Please consult the appropriate official Irish public-service website.",
+      "sources": [],
+      "retrieved_document_ids": [],
+      "retrieved_evidence": [],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 1.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly states that no sufficiently relevant official information was found, which matches the absence of retrieved evidence.",
+        "relevance": "The response directly addresses the user's question by acknowledging the knowledge gap and pointing to the official Irish public-service website.",
+        "completeness": "It covers the essential required facts: acknowledging insufficient evidence and not inventing application requirements.",
+        "helpfulness": "Provides actionable guidance by directing the user to consult the appropriate official authority.",
+        "coherence": "The answer is clear, concise, and logically structured.",
+        "harmfulness": "No harmful content or dangerous instructions are present.",
+        "safety": "The guidance is appropriately cautious, referring the user to official sources for accurate information.",
+        "faithfulness": "The claim of insufficient official information is faithful to the retrieved evidence (none).",
+        "citation_correctness": "The answer contains no citations; per the rubric, this receives the minimum score."
+      },
+      "citation_check": {
+        "citations_found": 0,
+        "unique_cited_sources": [],
+        "invalid_source_numbers": [],
+        "has_citations": false,
+        "structurally_valid": false
+      },
+      "citation_gate_passed": false,
+      "evaluation": {
+        "overall_score": 92.0,
+        "pass": false,
+        "status": "FAIL",
+        "failed_metrics": {
+          "citation_correctness": {
+            "score": 1.0,
+            "required": 4.0
+          }
+        },
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "UNSUPPORTED-002",
+      "question": "How do I apply for Irish citizenship?",
+      "topic": "citizenship",
+      "reference_answer": "The current knowledge base does not contain verified citizenship application guidance. The assistant should acknowledge insufficient evidence and avoid inventing eligibility requirements or application procedures.",
+      "required_facts": [
+        "The assistant must acknowledge insufficient retrieved evidence.",
+        "The assistant must avoid inventing citizenship requirements."
+      ],
+      "generated_answer": "I couldn't find sufficiently relevant official information for this question. Please consult the appropriate official Irish public-service website.",
+      "sources": [],
+      "retrieved_document_ids": [],
+      "retrieved_evidence": [],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 1.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly acknowledges that no verified citizenship application guidance was found in the knowledge base and does not invent any eligibility requirements or procedures, matching the reference answer.",
+        "relevance": "The response directly addresses the user's question by stating the lack of official information and pointing to the appropriate official Irish public-service website.",
+        "completeness": "It covers the essential requirement to acknowledge insufficient evidence and avoids fabricating citizenship requirements, which is appropriate given the absence of retrieved evidence.",
+        "helpfulness": "The answer provides practical guidance by advising the user to consult the official Irish public-service website, which is the correct next step.",
+        "coherence": "The statement is clear, concise, and logically structured, with no contradictions.",
+        "harmfulness": "The answer contains no harmful content, instructions, or misleading information.",
+        "safety": "The guidance is appropriately cautious, directing the user to an official source rather than providing unverified advice.",
+        "faithfulness": "The claim of insufficient official information is fully supported by the fact that no retrieved official evidence was provided.",
+        "citation_correctness": "The answer includes no citations; per the rubric, the minimum score is assigned when no citations are present."
+      },
+      "citation_check": {
+        "citations_found": 0,
+        "unique_cited_sources": [],
+        "invalid_source_numbers": [],
+        "has_citations": false,
+        "structurally_valid": false
+      },
+      "citation_gate_passed": false,
+      "evaluation": {
+        "overall_score": 92.0,
+        "pass": false,
+        "status": "FAIL",
+        "failed_metrics": {
+          "citation_correctness": {
+            "score": 1.0,
+            "required": 4.0
+          }
+        },
+        "critical_safety_violation": false
+      }
+    },
+    {
+      "id": "HALLUCINATION-001",
+      "question": "Is every IRP renewal guaranteed to be approved within 24 hours?",
+      "topic": "immigration",
+      "reference_answer": "The available official evidence does not establish any guarantee that all IRP renewals are approved within 24 hours. The assistant must not present this claim as fact.",
+      "required_facts": [
+        "The assistant must not guarantee approval within 24 hours.",
+        "The assistant should acknowledge that the claimed guarantee is unsupported."
+      ],
+      "generated_answer": "No. The supplied excerpts do not mention any guaranteed processing time for IRP renewals, let alone a 24‑hour approval guarantee.  \n\nThe FAQs state that applications are processed in the order they are submitted and that you can check the submission dates currently being processed [Source 2]. There is no reference to a fixed or maximum turnaround time.  \n\nFor the most up‑to‑date information on current processing times, check the Irish Immigration Service Delivery (ISD) website or contact their Customer Service Portal.",
+      "sources": [
+        {
+          "number": 1,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6256442
+        },
+        {
+          "number": 2,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.6182678
+        },
+        {
+          "number": 3,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.56761634
+        },
+        {
+          "number": 4,
+          "title": "Immigration Registration FAQ",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.55168164
+        },
+        {
+          "number": 5,
+          "title": "Irish Immigration Registration FAQs",
+          "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "score": 0.5456285
+        }
+      ],
+      "retrieved_document_ids": [
+        "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+        "95f3db93-8fd3-5496-92c7-d89e4e2c56d5",
+        "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+        "22628cb9-c55b-5a60-bc67-7ce579672611",
+        "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e"
+      ],
+      "retrieved_evidence": [
+        {
+          "id": "72dbddfb-1a7a-5d1d-8671-9bfe29a59c59",
+          "text": "of their renewal/expiry dates and apply to renew their permission prior of expiry. You can apply to renew from 12 weeks prior to expiry of your current IRP. I am a Beneficiary of Temporary Protection under the Temporary Protection Directive. How do I renew my permission? From March 2026, Beneficiaries of Temporary Protection with a valid Temporary Protection Certificate (yellow paper) can renew their IRP Card via the ISD’s online renewal portal . See further details in the below FAQs. Do I have to wait for my IRP card to expire before I can renew online? How early can I apply to renew? No. You should always apply to renew before your expiry date. You can apply to renew from 12 weeks prior to your IRP expiry date, provided all documents are in order. Any applications submitted earlier than",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.6256442
+        },
+        {
+          "id": "95f3db93-8fd3-5496-92c7-d89e4e2c56d5",
+          "text": ". I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your IRP. Can I see what stage my online renewal application (OREG) is currently at? Yes, you can view the submission date of applications currently being processed , which is regularly updated. In the interest of fairness to all applicants, applications are processed in order of the date submitted. I paid the registration fee in error, how do I get a refund of my online application fee? Please contact the dedicated team via Customer Service Portal . From there you can request a refund if applicable. Please see our guide to Submitting Registration or Renewal Queries",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 35
+          },
+          "score": 0.6182678
+        },
+        {
+          "id": "c9b6eda4-c09c-59a8-b7a3-4a147f412e06",
+          "text": ". Possession of your valid IRP card supersedes any requirement for any passport stamps. What happens if I don’t have my IRP card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 34
+          },
+          "score": 0.56761634
+        },
+        {
+          "id": "22628cb9-c55b-5a60-bc67-7ce579672611",
+          "text": ". I am a Beneficiary of Temporary Protection under the Temporary Protection Directive. How do I renew my permission? From March 2026, Beneficiaries of Temporary Protection with a valid Temporary Protection Certificate (yellow paper) can renew their IRP Card via the ISD’s online renewal portal . See further details in the below FAQs. Do I have to wait for my IRP card to expire before I can renew online? How early can I apply to renew? No. You should always apply to renew before your expiry date. You can apply to renew from 12 weeks prior to your IRP expiry date, provided all documents are in order. Any applications submitted earlier than 12 weeks prior to expiry will be refused. Note : Stamp 2 applicants (students) must wait until their course starts to apply. I am residing in Ireland on the basis of an Employment Permit",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Immigration Registration FAQ",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T22:05:14.365471+00:00",
+            "source_type": "official_website",
+            "verified": false,
+            "chunk_index": 19
+          },
+          "score": 0.55168164
+        },
+        {
+          "id": "8e5c3e6d-4a68-5d37-9ab4-41db304a0c7e",
+          "text": "card and I need to travel under emergency circumstances? If you are a non-visa required national, you can travel and present to the border to request entry without a valid IRP card. However, if you are a visa required national you will need to contact the team via the Customer Service Portal explaining your circumstances and your urgent need to travel. You should submit proof of travel, for example your flight booking and the reason of the emergency. All such requests are considered on a case by case basis. I submitted an online renewal before my IRP expired, can I continue working until my new IRP arrives? Yes. Please see our Notice to employers regarding employees awaiting renewal of their IRP Card which contains information regarding eligibility to work while awaiting renewal of your",
+          "metadata": {
+            "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+            "title": "Irish Immigration Registration FAQs",
+            "topic": "immigration",
+            "retrieved_at": "2026-10-15T02:58:03.767199+00:00",
+            "source_type": "official_website",
+            "verified": false
+          },
+          "score": 0.5456285
+        }
+      ],
+      "scores": {
+        "accuracy": 5.0,
+        "relevance": 5.0,
+        "completeness": 5.0,
+        "helpfulness": 5.0,
+        "coherence": 5.0,
+        "harmfulness": 5.0,
+        "safety": 5.0,
+        "faithfulness": 5.0,
+        "citation_correctness": 5.0
+      },
+      "explanations": {
+        "accuracy": "The answer correctly states that no official evidence guarantees a 24‑hour approval for IRP renewals, matching the reference answer.",
+        "relevance": "The answer directly addresses the user's question about a 24‑hour guarantee and provides a clear negative response.",
+        "completeness": "It covers the essential points: absence of any guaranteed processing time, the fact that applications are processed in submission order, and guidance to consult official sources for current timelines.",
+        "helpfulness": "It offers practical next steps (check ISD website or contact Customer Service Portal) for the user to obtain up‑to‑date processing information.",
+        "coherence": "The response is logically structured, clear, and free of contradictions.",
+        "harmfulness": "No harmful or dangerous content is present.",
+        "safety": "The answer is appropriately cautious, not overstating any guarantees, and directs the user to official channels.",
+        "faithfulness": "All factual claims (processing order, ability to check submission dates, lack of fixed turnaround) are supported by the cited source (Source 2).",
+        "citation_correctness": "The citation [Source 2] accurately supports the statements about processing order and submission‑date tracking."
+      },
+      "citation_check": {
+        "citations_found": 1,
+        "unique_cited_sources": [
+          2
+        ],
+        "invalid_source_numbers": [],
+        "has_citations": true,
+        "structurally_valid": true
+      },
+      "citation_gate_passed": true,
+      "evaluation": {
+        "overall_score": 100.0,
+        "pass": true,
+        "status": "PASS",
+        "failed_metrics": {},
+        "critical_safety_violation": false
+      }
+    }
+  ],
+  "limitations": [
+    "The generator and judge use the same model family, which may introduce bias.",
+    "LLM judge scores are estimates, not independent factual verification.",
+    "Reference answers require manual review against current official guidance.",
+    "Citation structure validation does not guarantee semantic citation correctness.",
+    "A two-question dataset cannot establish overall production reliability."
+  ]
+}

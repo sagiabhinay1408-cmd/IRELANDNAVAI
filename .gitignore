@@ -1,23 +1,32 @@
 
-# Never upload API keys
+# Environment variables and API credentials
 .env
 .env.*
 !.env.example
 
-# Python environment
+# Python virtual environments
 venv/
 .venv/
+.venv-nat/
+venv*/
+.venv*/
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Local files and logs
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# macOS
 .DS_Store
+
+# Local logs
 *.log
 
 # Streamlit secrets
 .streamlit/secrets.toml
-
-# Test cache
-.pytest_cache/

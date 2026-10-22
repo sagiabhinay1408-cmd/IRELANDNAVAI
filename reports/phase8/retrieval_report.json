@@ -1,0 +1,131 @@
+{
+  "project": "Ireland Navigator AI",
+  "phase": 8,
+  "evaluation_type": "retrieval",
+  "timestamp_utc": "2026-10-22T14:38:19.783367+00:00",
+  "summary": {
+    "total_questions": 2,
+    "top_k": 5,
+    "average_precision_at_k": 0.30000000000000004,
+    "average_recall_at_k": 1.0,
+    "mrr_at_k": 0.75
+  },
+  "results": [
+    {
+      "question": "How do I renew my Irish Residence Permit?",
+      "topic": "immigration",
+      "top_k": 5,
+      "relevant_document_ids": [
+        "60dec03a-8666-55d4-bb10-c6250a2f5573"
+      ],
+      "retrieved_document_ids": [
+        "e20d3eb4-da67-5710-8723-bab8d7127697",
+        "60dec03a-8666-55d4-bb10-c6250a2f5573",
+        "2022eb90-46e4-555e-966b-2d6bac1b17f6",
+        "91aac386-97fb-51e0-a02a-9fa06186ce15",
+        "1e7030d2-a66e-59e8-95a0-1aa467ff1b05"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 0.5,
+      "retrieved_documents": [
+        {
+          "id": "e20d3eb4-da67-5710-8723-bab8d7127697",
+          "score": 0.75224787,
+          "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "chunk_index": 36,
+          "text_preview": ". From there you can request a refund if applicable. Please see our guide to Submitting Registration or Renewal Queries . Irish Residence Permit (IRP) Cards What is an Irish Residence Permit (IRP) car"
+        },
+        {
+          "id": "60dec03a-8666-55d4-bb10-c6250a2f5573",
+          "score": 0.7241103,
+          "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "chunk_index": 23,
+          "text_preview": ". Any online renewal processed in error will be revoked. Should your circumstances change, a new online renewal may be submitted. Submitting Online Renewal Applications How do I renew my Irish Residen"
+        },
+        {
+          "id": "2022eb90-46e4-555e-966b-2d6bac1b17f6",
+          "score": 0.70305157,
+          "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "chunk_index": 0,
+          "text_preview": "In This Section Attending/Contacting the Burgh Quay Registration Office Booking a First Time Registration Appointment Attending a First Time Registration Appointment When to Renew Your Registration (I"
+        },
+        {
+          "id": "91aac386-97fb-51e0-a02a-9fa06186ce15",
+          "score": 0.6961874,
+          "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "chunk_index": null,
+          "text_preview": "In This Section Attending/Contacting the Burgh Quay Registration Office Booking a First Time Registration Appointment Attending a First Time Registration Appointment When to Renew Your Registration (I"
+        },
+        {
+          "id": "1e7030d2-a66e-59e8-95a0-1aa467ff1b05",
+          "score": 0.694643,
+          "source": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+          "chunk_index": 20,
+          "text_preview": ". Note : Stamp 2 applicants (students) must wait until their course starts to apply. I am residing in Ireland on the basis of an Employment Permit. Can I renew before my new Employment Permit is renew"
+        }
+      ]
+    },
+    {
+      "question": "What is a TFI Leap Card?",
+      "topic": "transport",
+      "top_k": 5,
+      "relevant_document_ids": [
+        "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+        "a5b6e909-45be-5d74-b988-231c39c56a2a"
+      ],
+      "retrieved_document_ids": [
+        "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+        "a5b6e909-45be-5d74-b988-231c39c56a2a",
+        "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+        "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+        "b331d559-5c32-55cb-98f3-a3687e3da926"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "retrieved_documents": [
+        {
+          "id": "c66366d2-5c00-5b3e-adaa-ea7ffbd54ac0",
+          "score": 0.6549773,
+          "source": "https://www.transportforireland.ie/fares/leap-card/",
+          "chunk_index": 0,
+          "text_preview": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 5"
+        },
+        {
+          "id": "a5b6e909-45be-5d74-b988-231c39c56a2a",
+          "score": 0.6354606,
+          "source": "https://www.transportforireland.ie/fares/leap-card/",
+          "chunk_index": null,
+          "text_preview": "What is TFI Leap Card? The TFI Leap Card is is a reusable, pre-paid travel card for public transport across the Transport for Ireland (TFI) network. It offers: Up to 30% savings on adult fares Up to 5"
+        },
+        {
+          "id": "ffc0ebd8-7cd0-5870-97fa-f5f5fc1c8cf6",
+          "score": 0.50803155,
+          "source": "https://www.transportforireland.ie/fares/leap-card/",
+          "chunk_index": 2,
+          "text_preview": ". Find out more about TFI Leap Card Capping here . What is the TFI 90 Minute Fare? Travel for up to 90 minutes across multiple TFI services in Dublin for: €2.00 Adult €1.00 Young Adult / Student €0.65"
+        },
+        {
+          "id": "8d506701-70ea-5ee5-a1a4-4b86d4a4017d",
+          "score": 0.47404668,
+          "source": "https://www.transportforireland.ie/fares/leap-card/",
+          "chunk_index": 1,
+          "text_preview": ". FAQs How much are TFI Leap Card fares? TFI Leap Card Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TF"
+        },
+        {
+          "id": "b331d559-5c32-55cb-98f3-a3687e3da926",
+          "score": 0.46003515,
+          "source": "https://www.transportforireland.ie/fares/leap-card/",
+          "chunk_index": null,
+          "text_preview": "Fares Save up to 30% compared to cash fares. Check fares by operator TFI Leap Card fares What is TFI Leap Card Capping? Fare Capping (Zone 1 – TFI Dublin) Zone 1: TFI Dublin Adult Young Adult (19-25)/"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Ground-truth relevance labels must be manually verified.",
+    "Incomplete relevance labels can distort precision and recall.",
+    "Retrieval metrics do not measure answer faithfulness or citation accuracy."
+  ]
+}

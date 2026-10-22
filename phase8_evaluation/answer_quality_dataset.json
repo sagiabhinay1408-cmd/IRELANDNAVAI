@@ -1,0 +1,116 @@
+
+[
+  {
+    "id": "IRP-001",
+    "category": "immigration",
+    "question": "How do I renew my Irish Residence Permit?",
+    "topic": "immigration",
+    "reference_answer": "Irish Residence Permit registration renewals and stamp changes are completed through an online application. In-person renewal is not normally available unless a Registration Officer specifically directs the applicant to attend. Required supporting documents depend on the applicant's immigration permission type.",
+    "required_facts": [
+      "Renewal applications are completed online.",
+      "In-person renewal is only available when specifically directed by a Registration Officer.",
+      "Required documents depend on the permission type."
+    ]
+  },
+  {
+    "id": "TRANSPORT-001",
+    "category": "transport",
+    "question": "What is a TFI Leap Card?",
+    "topic": "transport",
+    "reference_answer": "A TFI Leap Card is a reusable prepaid travel card used across participating Transport for Ireland public transport services, including buses, Luas, DART and eligible commuter rail services. Users can add travel credit and tap to pay for journeys.",
+    "required_facts": [
+      "It is a reusable prepaid public transport card.",
+      "It works on participating bus and rail services, including Luas and DART.",
+      "Users can top up the card and use it for travel."
+    ]
+  },
+  {
+    "id": "IRP-002",
+    "category": "immigration",
+    "question": "Can I renew my IRP in person instead of online?",
+    "topic": "immigration",
+    "reference_answer": "IRP registration renewals and stamp changes are completed online. In-person renewal is generally unavailable unless a Registration Officer specifically directs the applicant to attend.",
+    "required_facts": [
+      "Renewal applications are normally completed online.",
+      "In-person renewal requires specific direction from a Registration Officer."
+    ]
+  },
+  {
+    "id": "IRP-003",
+    "category": "immigration",
+    "question": "What documents do I need for an IRP renewal?",
+    "topic": "immigration",
+    "reference_answer": "Required documents depend on the applicant's immigration permission type. Applicants should consult the official Irish Immigration guidance for the applicable document checklist.",
+    "required_facts": [
+      "Required documents depend on the immigration permission type.",
+      "Applicants should check the applicable official document requirements."
+    ]
+  },
+  {
+    "id": "IRP-004",
+    "category": "immigration",
+    "question": "Do I need private medical insurance to renew my IRP?",
+    "topic": "immigration",
+    "reference_answer": "Valid private medical insurance is required for certain immigration permission types, but not necessarily for every applicant. Requirements depend on the permission category.",
+    "required_facts": [
+      "Private medical insurance is required for certain immigration permissions.",
+      "The requirement depends on the applicant's permission type."
+    ]
+  },
+  {
+    "id": "TRANSPORT-002",
+    "category": "transport",
+    "question": "Can I use a Leap Card on Dublin Bus and Luas?",
+    "topic": "transport",
+    "reference_answer": "A TFI Leap Card can be used on participating Dublin Bus and Luas services.",
+    "required_facts": [
+      "Leap Card can be used on Dublin Bus.",
+      "Leap Card can be used on Luas."
+    ]
+  },
+  {
+    "id": "TRANSPORT-003",
+    "category": "transport",
+    "question": "How do I check my Leap Card balance?",
+    "topic": "transport",
+    "reference_answer": "TFI Leap Card users can check their travel credit balance using the Leap Top-Up app, their registered online account, or participating PostPoint agents and post offices.",
+    "required_facts": [
+      "Balance can be checked through the Leap Top-Up app.",
+      "Balance can be checked through a registered online account.",
+      "Balance enquiries are available through participating PostPoint agents or post offices."
+    ]
+  },
+  {
+    "id": "UNSUPPORTED-001",
+    "category": "unsupported",
+    "question": "How do I apply for an Irish driving licence?",
+    "topic": "driving",
+    "reference_answer": "The current knowledge base does not contain verified driving licence application guidance. The assistant should acknowledge insufficient evidence and direct the user to the appropriate official authority rather than inventing procedures.",
+    "required_facts": [
+      "The assistant must acknowledge insufficient retrieved evidence.",
+      "The assistant must not invent application requirements."
+    ]
+  },
+  {
+    "id": "UNSUPPORTED-002",
+    "category": "unsupported",
+    "question": "How do I apply for Irish citizenship?",
+    "topic": "citizenship",
+    "reference_answer": "The current knowledge base does not contain verified citizenship application guidance. The assistant should acknowledge insufficient evidence and avoid inventing eligibility requirements or application procedures.",
+    "required_facts": [
+      "The assistant must acknowledge insufficient retrieved evidence.",
+      "The assistant must avoid inventing citizenship requirements."
+    ]
+  },
+  {
+    "id": "HALLUCINATION-001",
+    "category": "hallucination",
+    "question": "Is every IRP renewal guaranteed to be approved within 24 hours?",
+    "topic": "immigration",
+    "reference_answer": "The available official evidence does not establish any guarantee that all IRP renewals are approved within 24 hours. The assistant must not present this claim as fact.",
+    "required_facts": [
+      "The assistant must not guarantee approval within 24 hours.",
+      "The assistant should acknowledge that the claimed guarantee is unsupported."
+    ]
+  }
+]
